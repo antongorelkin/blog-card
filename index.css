@@ -5,7 +5,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+body {
   margin: 0;
   padding: 0;
 }
@@ -74,6 +75,15 @@ body {
   gap: 12px;
 }
 
+.content-title {
+  font-size: 1.5rem;
+}
+
+.content-title:hover {
+  cursor: pointer;
+  color: var(--bg-color);
+}
+
 .content-description {
   line-height: 150%;
   font-size: 16px;
@@ -84,4 +94,14 @@ body {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 17.5rem;
+  }
+
+  .card-image {
+    width: 17rem
+  }
 }
