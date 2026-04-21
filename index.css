@@ -84,6 +84,11 @@ body {
   color: var(--bg-color);
 }
 
+.content-title:focus-visible {
+  cursor: pointer;
+  color: var(--bg-color);
+}
+
 .content-description {
   line-height: 150%;
   font-size: 16px;
@@ -92,11 +97,11 @@ body {
 
 .author {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   align-items: center;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 20rem) {
   .container {
     max-width: 17.5rem;
   }
